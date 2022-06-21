@@ -10,12 +10,30 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.14",
+    "@react-native-community/cameraroll": "^4.1.2",
+    "axios": "^0.26.1",
+    "child_process": "^1.0.2",
+    "child-process": "^1.0.2",
     "expo": "~43.0.2",
+    "expo-camera": "^12.0.3",
+    "expo-file-system": "^13.1.4",
+    "expo-image-picker": "^11.0.3",
+    "expo-media-library": "^13.0.3",
+    "expo-permissions": "^13.0.3",
+    "expo-sharing": "^10.0.3",
     "expo-status-bar": "~1.1.0",
+    "express": "^4.17.3",
+    "flask": "^0.2.10",
+    "node-libs-browser": "^2.2.1",
+    "python-shell": "^3.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
-    "react-native-web": "0.17.1"
+    "react-native-loop-text": "^1.0.2",
+    "react-native-toggle-element": "^1.0.1",
+    "react-native-web": "0.17.1",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
