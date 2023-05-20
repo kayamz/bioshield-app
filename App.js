@@ -33,7 +33,7 @@ import CancelBtn from './Buttons/TransferCancelBtns/CancelBtn/CancelPresenter';
 import SaveBtn from './Buttons/SaveShareBtns/SaveBtn/SavePresenter';
 import ShareBtn from './Buttons/SaveShareBtns/ShareBtn/SharePresenter';
 
-import afterImage from './eyeDetection/testing/img/final/after.png'
+import afterImage from './DetectionServer/testing/img/final/after.png'
 
 const { width, height } = Dimensions.get('window');
 const MainContainer = styled.View`
