@@ -10,8 +10,6 @@ const getResults = (imgObj) => {
 	console.log('[3] Image Transfer Start!');
 	const after = `${imgObj.after}`;
 	const after64 = `data:image/png;base64,${imgObj.after64}`;
-	// console.log(after);
-	// console.log(after64);
 	console.log('[3] Image Transfer Complete!');
 	tempResult = [after, after64];
 };

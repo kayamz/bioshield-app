@@ -35,11 +35,9 @@ def let_me_shine():
 
     rand_uuid = uuid.uuid4()
     usr_ID = f'{rand_uuid}'
-    # client_ip = 971020
 
     try:
         data = request.get_json(silent=True, force=True)
-        # print(type(data))
         if not data['origin']:       
             print('Re-send image, please.')
             return 'Re-send image, please.'
@@ -75,14 +73,9 @@ def let_me_shine():
 
             json_data = json.dumps(data)
 
-            # rq.post(url_base + '{}'.format(usr_ID), json=json_data)
             rq.post(url_base + f'please', json=json_data)
 
-            # return json_data
-            # shutil.rmtree(BASE_DIR) # UUID 디렉터리 삭제
-            # return url_base + '{}'.format(usr_ID)
             return url_base + f'please'
-            # return outputName
 
     except Exception as e:
         print(f'json_data part error: {e}')
