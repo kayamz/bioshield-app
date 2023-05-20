@@ -17,10 +17,6 @@ import * as Sharing from 'expo-sharing';
 
 import { imageTransfer } from './API/api';
 
-import { useTwoPeopleState } from './Buttons/ChangeBtns/TwoPeopleBtn/TwoPeopleContainer';
-
-import { useGenderState } from './Buttons/ChangeBtns/GenderBtn/GenderContainer';
-
 import TakePhotoBtn from './Buttons/MainScreenBtns/TakePhotoBtn/TakePhotoPresenter';
 import { useTakePhotoState } from './Buttons/MainScreenBtns/TakePhotoBtn/TakePhotoContainer';
 
@@ -37,7 +33,6 @@ import CancelBtn from './Buttons/TransferCancelBtns/CancelBtn/CancelPresenter';
 import SaveBtn from './Buttons/SaveShareBtns/SaveBtn/SavePresenter';
 import ShareBtn from './Buttons/SaveShareBtns/ShareBtn/SharePresenter';
 
-import { useNoticeState } from './Buttons/MainScreenBtns/NoticeBtns/NoticeContainer';
 import afterImage from './eyeDetection/testing/img/final/after.png'
 
 const { width, height } = Dimensions.get('window');
@@ -66,18 +61,6 @@ export default function App() {
 
 	// Own Hooks States
 	const {
-		isTwoPeople,
-		setIsTwoPeople,
-		twoPeopleToggleValue,
-		setTwoPeopleToggleValue,
-	} = useTwoPeopleState();
-	const {
-		isGender,
-		setIsGender,
-		genderValue,
-		setGenderValue,
-	} = useGenderState();
-	const {
 		cameraRef,
 		isPreview,
 		setIsPreview,
@@ -97,13 +80,6 @@ export default function App() {
 		isNotice,
 		setIsNotice,
 	} = useNoticeState();
-	const {
-		firstLightColor,
-		firstLightText,
-		secondLightColor,
-		secondLightText,
-		LightDefaultColor,
-	} = useLightState();
 
 	// useEffect
 	useEffect(() => {
@@ -140,8 +116,6 @@ export default function App() {
 			(takePhoto && takePhoto.base64) ||
 			(albumPhoto && albumPhoto.base64);
 
-		setIsTwoPeople(true);
-		setTwoPeopleToggleValue(true);
 		setTakePhoto({});
 		setAlbumPhoto({});
 	};
